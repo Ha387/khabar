@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود و ثبت‌نام</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/login_register.css">
+</head>
+<body>
+    <div class="form-container" id="login-form">
+        <h1 class="text-white">ورود</h1>
+        <form>
+            <input type="email" class="form-control" placeholder="ایمیل">
+            <input type="password" class="form-control" placeholder="رمز عبور">
+            <button type="submit" class="btn btn-primary">ورود</button>
+        </form>
+        <p class="toggle-link text-white">حساب ندارید؟ <a href="#register-form" id="show-register">ثبت‌نام کنید</a></p>
+    </div>
+
+    <div class="form-container d-none" id="register-form">
+        <h1 class="text-white">ثبت‌نام</h1>
+        <form>
+            <input type="text" class="form-control" placeholder="اسم">
+            <input type="email" class="form-control" placeholder="ایمیل">
+            <input type="password" class="form-control" placeholder="رمز عبور">
+            <button type="submit" class="btn btn-primary">ثبت‌نام</button>
+        </form>
+        <p class="toggle-link text-white">حساب دارید؟ <a href="#login-form" id="show-login">وارد شوید</a></p>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
